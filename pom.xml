@@ -3,8 +3,8 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example.fis</groupId>
-    <artifactId>fuse79-spring-boot</artifactId>
+    <groupId>com.sudip</groupId>
+    <artifactId>simple-timer</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <name>Fabric8 :: Quickstarts :: Spring-Boot :: Camel XML</name>
@@ -13,8 +13,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-        <!-- configure the Fuse version you want to use here -->
         <fuse.bom.version>7.9.0.fuse-sb2-790065-redhat-00001</fuse.bom.version>
         <docker.image.version>1.9</docker.image.version>
     </properties>
@@ -35,20 +33,6 @@
         <dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
